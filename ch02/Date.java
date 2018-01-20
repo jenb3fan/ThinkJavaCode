@@ -7,7 +7,7 @@ public class Date
 
     {
 
-        System.out.println("Todays Date");
+        System.out.println("Todays Date Is: ");
 
         String day = "Thursday, ";
         String month = "January";
