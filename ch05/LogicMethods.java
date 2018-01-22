@@ -4,20 +4,25 @@ public class LogicMethods
 
     {
         System.out.println("Start of Program");
-        printIsLarge(1);
-        printIsLarge(99);
-        printIsLarge(100);
-        printIsLarge(200);
+        printIsLargeOrSmall(1);
+        printIsLargeOrSmall(99);
+        printIsLargeOrSmall(100);
+        printIsLargeOrSmall(200);
     }
 
-    private static void printIsLarge(int number)
+    private static void printIsLargeOrSmall(int number)
     {
-        System.out.println("printIsLarge");
+        System.out.println("printIsLargeOrSmall");
         System.out.println("Number is: " + number);
 
-        if(number > 99)
+
+        if(number >= 99)
         {
-            System.out.println("The number is large ");
+            System.out.println("The number is large " + number );
+        }
+        else if (number < 10)
+        {
+            System.out.println("The number is small " + number);
         }
 
         System.out.println();
